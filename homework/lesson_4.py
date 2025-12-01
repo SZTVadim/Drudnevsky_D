@@ -1,6 +1,5 @@
-
 # veriables
-city = 'SantPeterburg'
+city = "SantPeterburg"
 
 # display
 print(id(city))
