@@ -2,6 +2,6 @@
 # veriables
 city = 'SantPeterburg'
 
-# action
+# display
 print(id(city))
 print(type(city))
