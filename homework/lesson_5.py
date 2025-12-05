@@ -55,7 +55,7 @@ print(line4[::-1])
 
 # ЗАДАНИЕ 9: Экранирование символов
 
-line5 = "Он сказал: \"Привет\""
+line5 = 'Он сказал: "Привет"'
 print(line5)
 line6 = "Первая строка \nВторая строка"
 print(line6)
@@ -72,7 +72,7 @@ print(fruits)
 # ЗАДАНИЕ 11: Удаление элементов из списка
 fruits = ["яблоко", "банан", "апельсин", "банан"]
 print(fruits)
-fruits.remove('банан')
+fruits.remove("банан")
 print(fruits)
 delpop = fruits.pop()
 print(delpop)
