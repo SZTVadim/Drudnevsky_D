@@ -1,5 +1,5 @@
 # Задача_1:
-list1 = [n ** 3 for n in range(1, 9)]
+list1 = [n**3 for n in range(1, 9)]
 print(list1)
 print(max(list1))
 print(min(list1))
