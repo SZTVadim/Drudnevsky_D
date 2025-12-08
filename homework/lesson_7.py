@@ -1,4 +1,4 @@
-# Задача 1:
+# Задача_1:
 list = [n ** 3 for n in range(1, 9)]
 print(list)
 print(max(list))
