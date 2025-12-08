@@ -1,8 +1,8 @@
 # Задача_1:
-list = [n ** 3 for n in range(1, 9)]
-print(list)
-print(max(list))
-print(min(list))
+list1 = [n ** 3 for n in range(1, 9)]
+print(list1)
+print(max(list1))
+print(min(list1))
 
 # Задача 2:
 list2 = [5, 12, 8, 15, 3, 20, 7, 18, 9, 11]
