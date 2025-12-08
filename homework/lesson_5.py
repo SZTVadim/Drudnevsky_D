@@ -3,6 +3,10 @@ string = "Привет"
 integer = 42
 floating = 3.14
 list1 = [1, 2, 3]
+print(type(string))
+print(type(integer))
+print(type(floating))
+print(type(list1))
 
 # ЗАДАНИЕ 2: Преобразование регистра строк
 text = "python PROGRAMMING"
@@ -31,7 +35,7 @@ print(text4.replace("Python", "Java"))
 test5 = "Python программирование на Python"
 print(test5.find("Python"))
 print(test5.count("Python"))
-print(test5.count("Java"))
+print(test5.find("Java"))
 
 # ЗАДАНИЕ 7: Проверка типа символов
 
@@ -51,7 +55,7 @@ line4 = "Python very good"
 print(line4[:3])
 print(line4[13:])
 print(line4[::2])
-print(line4[::-1])
+print(line4[-3:])
 
 # ЗАДАНИЕ 9: Экранирование символов
 
