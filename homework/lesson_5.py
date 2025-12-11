@@ -53,9 +53,9 @@ print(line4.isspace())
 
 line4 = "Python very good"
 print(line4[:3])
-print(line4[13:])
-print(line4[::2])
 print(line4[-3:])
+print(line4[::2])
+print(line4[::-1])
 
 # ЗАДАНИЕ 9: Экранирование символов
 
