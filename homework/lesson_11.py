@@ -1,14 +1,24 @@
-# Задача 1:
-cube_list = [x**3 for x in range(9)]
-print(min(cube_list), max(cube_list))
-# print(min([x ** 3 for x in range(9)]), max([x ** 3 for x in range(9)]))
+# ЗАДАНИЕ 1: Работа с кортежами
+coordinates = (10, 20, 30, 20, 10, 20, 40)
+print(coordinates[0])
+print(coordinates[-1])
+print(coordinates[1:4])
+print(30 in coordinates)
+print(coordinates.index(20))
+print(coordinates.count(20))
+print(coordinates.count(50))
+print(len(coordinates))
 
-# Задача 2:
-list1 = [5, 12, 8, 15, 3, 20, 7, 18, 9, 11]
-list_limit = [x for x in list1 if x > 10]
-print(sum(list_limit))
+# ЗАДАНИЕ 2: Операции с кортежами
 
-# Задача 3:
-cities = ["москва", "санкт-петербург", "казань"]
-up_cities = [city.title() for city in cities]
-print(up_cities)
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+numbers = [10, 20, 30, 40, 50]
+tuple1 = tuple1 + tuple2
+tuple3 = tuple1 * 3
+x, y, z, *_ = tuple1
+first, *middle, last = tuple(numbers)
+numbers = tuple(numbers)
+tuple_even = tuple(x for x in range(11))
+tuple_square = tuple(x**2 for x in range(1, 6))
+tuple_one = (42,)
