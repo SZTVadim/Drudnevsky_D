@@ -1,4 +1,5 @@
 # ЗАДАНИЕ 1: Работа с кортежами
+
 coordinates = (10, 20, 30, 20, 10, 20, 40)
 print(coordinates[0])
 print(coordinates[-1])
@@ -22,4 +23,3 @@ numbers = tuple(numbers)
 tuple_even = tuple(x for x in range(11))
 tuple_square = tuple(x**2 for x in range(1, 6))
 tuple_one = (42,)
-git
