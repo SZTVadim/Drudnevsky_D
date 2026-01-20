@@ -1,4 +1,4 @@
-class book:
+class books:
     def __init__(self, author, page, title):
         self.title = title
         self.author = author
@@ -16,9 +16,9 @@ class book:
             return print(False)
 
 
-book1 = book("Толкин", "600", "Властелин колец")
-book2 = book("Дэн Абнетт", "299", "Возвышение Хоруса")
-book3 = book("Братья Стругацкие", "320", "Страна багровых туч")
+book1 = books("Толкин", "600", "Властелин колец")
+book2 = books("Дэн Абнетт", "299", "Возвышение Хоруса")
+book3 = books("Братья Стругацкие", "320", "Страна багровых туч")
 
 book1.get_info()
 book2.get_info()
@@ -28,15 +28,13 @@ book1.is_long()
 book2.is_long()
 book3.is_long()
 
-# from mimetypes import add_type
-
 
 class BankAccount:
     def __init__(self, owner, balans=0):
         self.owner = owner
         self.balans = balans
 
-    type = "Физическое лицо"
+    type_Account = "Физическое лицо"
 
     def deposits(self, refill):
         self.balans += refill
