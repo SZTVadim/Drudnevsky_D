@@ -1,4 +1,4 @@
-class books:
+class Book:
     def __init__(self, author, page, title):
         self.title = title
         self.author = author
@@ -16,9 +16,9 @@ class books:
             return print(False)
 
 
-book1 = books("Толкин", "600", "Властелин колец")
-book2 = books("Дэн Абнетт", "299", "Возвышение Хоруса")
-book3 = books("Братья Стругацкие", "320", "Страна багровых туч")
+book1 = Book("Толкин", "600", "Властелин колец")
+book2 = Book("Дэн Абнетт", "299", "Возвышение Хоруса")
+book3 = Book("Братья Стругацкие", "320", "Страна багровых туч")
 
 book1.get_info()
 book2.get_info()
@@ -34,7 +34,7 @@ class BankAccount:
         self.owner = owner
         self.balans = balans
 
-    type_Account = "Физическое лицо"
+    client_type = "Физическое лицо"
 
     def deposits(self, refill):
         self.balans += refill
