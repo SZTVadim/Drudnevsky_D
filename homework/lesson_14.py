@@ -5,12 +5,11 @@
 
 def calculate_total(price, tax_price):
 
-    if tax_price >= 20:
+    if tax_price >= 20 or price <= 0:
         return "Error"
-    elif price < 0:
-        return "Error"
+
     else:
-        return price * (float(tax_price) / 100)
+        return price, (price * (float(tax_price) / 100))
 
 
 # 2. Создайте функцию get_level(points):
