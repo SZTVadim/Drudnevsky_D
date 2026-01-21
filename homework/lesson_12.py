@@ -32,7 +32,7 @@ print(lot_1)
 dickt_0 = {}
 for name, data in employees.items():
     otdel = data["отдел"]
-    dickt_0[otdel] = name
+    dickt_0[otdel] = [name]
 print(dickt_0)
 
 # dict_1 = {key["отдел"]: vel[]}
