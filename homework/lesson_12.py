@@ -26,13 +26,16 @@ lot_1 = {x["отдел"] for x in employees.values()}
 print(lot_1)
 
 # 5. Удалите сотрудника "Петр" и сохраните его данные
-# name = employees.pop("Петр")
-# print(name)
+name = employees.pop("Петр")
+print(name)
 # 6. Создайте словарь, где ключ - отдел, а значение - список имен сотрудников
 dickt_0 = {}
 for name, data in employees.items():
     otdel = data["отдел"]
-    dickt_0[otdel] = [name]
+    if otdel not in dickt_0:
+        dickt_0[otdel] = []
+    dickt_0[otdel].append(name)
+
 print(dickt_0)
 
 # dict_1 = {key["отдел"]: vel[]}
