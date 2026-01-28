@@ -3,15 +3,16 @@
 # 2. Создайте функцию get_level(points):
 
 
-def calculate_total(price, tax_price):
+def calculate_total(price, tax_percent):
 
-    if tax_price >= 20 or price <= 0:
+    if tax_percent > 20 or price < 0:
         return "Error"
 
     else:
-        return price, (price * (float(tax_price) / 100))
+        return price + (price * (float(tax_percent) / 100))
 
 
+print(calculate_total(10, 20))
 # 2. Создайте функцию get_level(points):
 
 
