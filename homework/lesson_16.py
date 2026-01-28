@@ -1,19 +1,19 @@
 class Book:
-    def __init__(self, author, page, title):
+    def __init__(self, author, pages, title):
         self.title = title
         self.author = author
-        self.page = int(page)
+        self.pages = int(pages)
 
     genre = "fantasy"
 
     def get_info(self):
-        return print(f"Название {self.title} автор {self.author}, кол.стр. {self.page}")
+        return f"Название {self.title} автор {self.author}, кол.стр. {self.pages}"
 
     def is_long(self):
-        if self.page > 300:
-            return print(True)
+        if self.pages > 300:
+            return True
         else:
-            return print(False)
+            return False
 
 
 book1 = Book("Толкин", "600", "Властелин колец")
@@ -36,41 +36,26 @@ class BankAccount:
 
     client_type = "Физическое лицо"
 
-    def deposits(self, refill):
+    def deposit(self, refill):
         self.balans += refill
         return self.balans
 
     def withdraw(self, expense):
         if self.balans >= expense:
             self.balans -= expense
-            return print(f"Cумма сниятия {expense}  Текущий баланс: {self.balans}")
+            return f"{True}  Текущий баланс: {self.balans}"
         else:
-            return print(f"Недостаточно средств. Доступно {self.balans}")
+            return f"{False} Недостаточно средств "
 
-    def get_balans(self):
-        return print(self.balans)
-
-
-my_deposits = BankAccount("Руднев Дмитрий", 6000)
-
-print("Текущий баланс: ")
-my_deposits.get_balans()
-
-print("_______________________")
-
-amount = int(input("Введите сумму пополнения: "))
-print(f"Баланс пополнен на {amount}")
-print("Текущий баланс :")
-my_deposits.deposits(amount)
-my_deposits.get_balans()
+    def get_balance(self):
+        return self.balans
 
 
-print("_______________________")
-
-volue = int(input("Введите сумму  для снятия:  "))
-my_deposits.withdraw(volue)
+my_deposits = BankAccount("Руднев Дмитрий", 1000)
 
 
-print("_______________________")
-volue1 = int(input("Введите сумму  для снятия:  "))
-my_deposits.withdraw(volue1)
+print(my_deposits.get_balance())
+print(my_deposits.deposit(5000))
+print(my_deposits.get_balance())
+print(my_deposits.withdraw(3000))
+print(my_deposits.withdraw(6000))
