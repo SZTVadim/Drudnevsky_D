@@ -17,9 +17,10 @@ tuple2 = (4, 5, 6)
 numbers = [10, 20, 30, 40, 50]
 tuple1 = tuple1 + tuple2
 tuple3 = tuple1 * 3
-x, y, z, *_ = tuple1
+a, b, *c = tuple1
 first, *middle, last = tuple(numbers)
 numbers = tuple(numbers)
-tuple_even = tuple(x % 2 == 0 for x in range(11))
+tuple_even = tuple(x for x in range(11) if x % 2 == 0)
 tuple_square = tuple(x**2 for x in range(1, 6))
 tuple_one = (42,)
+print(tuple_even)
