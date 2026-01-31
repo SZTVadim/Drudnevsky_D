@@ -20,35 +20,34 @@ book1 = Book("Толкин", "600", "Властелин колец")
 book2 = Book("Дэн Абнетт", "299", "Возвышение Хоруса")
 book3 = Book("Братья Стругацкие", "320", "Страна багровых туч")
 
-book1.get_info()
-book2.get_info()
-book3.get_info()
+print(book1.get_info())
+print(book2.get_info())
+print(book3.get_info())
 
-book1.is_long()
-book2.is_long()
-book3.is_long()
+print(book1.is_long())
+print(book2.is_long())
+print(book3.is_long())
 
 
 class BankAccount:
-    def __init__(self, owner, balans=0):
+    def __init__(self, owner, balance=0):
         self.owner = owner
-        self.balans = balans
+        self.balance = balance
 
     client_type = "Физическое лицо"
 
     def deposit(self, refill):
-        self.balans += refill
-        return self.balans
+        self.balance += refill
+        return self.balance
 
     def withdraw(self, expense):
-        if self.balans >= expense:
-            self.balans -= expense
-            return f"{True}  Текущий баланс: {self.balans}"
+        if self.balance >= expense:
+            self.balance -= expense
+            return True
         else:
-            return f"{False} Недостаточно средств "
-
+            return False
     def get_balance(self):
-        return self.balans
+        return self.balance
 
 
 my_deposits = BankAccount("Руднев Дмитрий", 1000)
