@@ -37,4 +37,4 @@ for name, data in employees.items():
 
 print(dickt_0)
 
-# dict_1 = {key["отдел"]: vel[]} #
+# dict_1 = {key["отдел"]: vel[]} ##
